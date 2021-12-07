@@ -1,0 +1,134 @@
+.App {
+  text-align: center;
+ 
+  height: 100vh;
+  }
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* button{
+  background-color: #0bf;
+  border-radius: 2px;
+  border: none;
+  padding: 3px 13px;
+}
+button:hover{
+  background-color: #09d;
+}
+input{
+  border-radius: 5px;
+  border:none;
+  width: auto;
+ 
+}
+.main{
+  background-color: darkgrey;
+  width: 22vw;
+  border-radius: 34px;
+  padding: 7px 0px;
+  line-height: 1.6;
+  font-size: 17px;
+  letter-spacing: 0.039em;
+  font-weight: 300;
+  
+}
+.signup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formElements{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+span{
+  font-weight: normal;
+font-size: smaller;
+}
+p{
+   letter-spacing: -0.27px;
+   font-weight: 400;
+   color: deeppink;
+}
+
+.Login {
+  background-color: transparent;
+    display: inline flow-root list-item;
+    height: max-content;
+    width: 30vw;
+    margin-top: 131px;
+    padding-top: 3px;
+    padding-bottom: 7px;
+    border-radius: 60px;
+    }
+  
+    .Login > img:nth-child(1) {
+      border-top-width: 0px;
+      border-top-style: solid;
+      width: 165px;
+      height: 145px;
+      border-radius: 8px;
+      }
+  
+  .btn1 {
+  border-width: 1px 2px ;
+  border-style: solid;
+  padding: 4px 42px ;
+  margin: 0px 2px ;
+  border-radius: 15px;
+  }
+  .btn2 {
+    border-width: 1px 2px ;
+  border-style: solid;
+  padding: 4px 42px ;
+  margin: 0px 2px ;
+  border-radius: 15px; 
+   
+    }
+    .btn1:hover {
+      background-image: linear-gradient(#333,#0ff);
+      color: white;
+    }
+    .btn2:hover {
+      background-image: linear-gradient(#333,#0ff);
+      color: white;
+    }
+    #user_mail{
+      border-radius: 15px;
+    }
+    #password{
+      border-radius: 15px;
+    } */
