@@ -4,7 +4,6 @@ import image from '../image/image.jpeg';
 import './signlog.css';
 import {Link} from 'react-router-dom'
 import {useNavigate} from "react-router-dom"
-
 function Login(){
   let navigate=useNavigate();
   function handleSubmit(){   
@@ -18,6 +17,8 @@ function Login(){
       {alert(resp.data.message);
        console.log(resp.data.message);
        if(resp.data.message==="Sucessful Login"){
+        localStorage.setItem('log',true)
+         localStorage.setItem('user_mail',JSON.stringify(resp.data))
           document.getElementById("user_mail").value="";
           document.getElementById("password").value="";
           navigate("/home")
@@ -39,7 +40,8 @@ function Login(){
                       <img src={image} alt=" "></img>
                       <div>
                       <h2>Login </h2>
-                      <Link id="link" to="/signup">Create account?</Link>
+                      Create account?
+                      <Link id="link" to="/signup">Signup</Link>
                       </div>
                       <div>
                         User_mail :

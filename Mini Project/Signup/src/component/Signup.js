@@ -97,9 +97,10 @@ import "./signlog.css"
           <span style={{color:"#f00"}} ></span>
        </div><br />
        <div>
-          <button onClick={handleSubmit} type="submit">submit</button>
+          <button className="btn1" onClick={handleSubmit} type="submit">submit</button>
        </div>
-      <Link id="link" to="/login">Already have an account?</Link>
+       Already have an account?
+      <Link id="link" to="/login">Login</Link>
        </div>
        </form>
    </div>

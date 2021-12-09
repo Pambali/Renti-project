@@ -4,8 +4,8 @@ import Login from './component/Login';
 import Signup from './component/Signup';
 import { Routes, Route} from 'react-router-dom';
 import Forgot_password from './component/Forgot_password';
-import Reset_password from './component/Reset_password';
-import Home from './component/homepage/Home';
+import Home from './component/Homepages/Home';
+import Userinfo from './component/Homepages/Userinfo';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
                <Route path ="/signup" element={Signup()}/> 
                <Route path ="/login" element={Login()}/>
                <Route path ="/forgot_password" element={Forgot_password()} />
-               <Route path ="/reset_password"  element={Reset_password()}/>
+               <Route path="/userinfo" element={Userinfo()}/>
          </Routes>
          
     </div>
