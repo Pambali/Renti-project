@@ -1,0 +1,111 @@
+.movie-detailed-page{
+    margin: 20px;
+}
+
+.movie{
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+    margin: 10px;
+    width:15vw;  
+    align-items:center
+}
+
+.list{
+    margin: 10px 0px;
+    display:flex;
+    flex-direction:column
+}
+.title_and_button{
+    display:flex;
+    flex-direction:row;
+    background-color: #ccc;
+    color: #088;
+    justify-content: center;
+    align-items: center;
+}
+.listBody{
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    width:100vw
+    
+}
+.movieImg{
+    width:15vw;
+    height:auto
+}
+.movieBody{
+    width:15vw;
+    background-color: #888;
+    font-weight: lighter;
+}
+.movieName{
+color: #300;
+}
+.movieYear{
+color: #07f;    
+}
+.a{
+    right: 0;
+    position: absolute;
+}
+.more-button{
+border: none; 
+background-color: #000;
+color: #fff;
+padding: 4px 10px;
+border-radius: 0.5vw;
+margin-right: 10px;
+}
+.more-button:hover{
+background-color: #088;
+font-weight: bold;
+    /* background-color: #5aa; */
+}
+.listtitle{
+    background-color: #088;
+    color: #fff;
+    height: 10vh;
+    width: 100vw;
+    align-items: center;
+}
+.block{
+       width: 50%;
+}
+.plot{
+       padding: 10px;
+       margin: 10px;
+}
+
+.poster{
+    width: 40%;
+    float: left;
+}
+.movie-info{
+    width: 60%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+.movie-amt{
+margin: 50px 0px;
+} 
+.year, .duration, .genre{
+    margin: 10px;
+}
+.buyRent{
+background-color: #f00; /* Green */
+border: none;
+color: white;
+padding: 15px 32px;
+margin: 10px; 
+text-align: center;
+/* display: inline-block; */
+font-size: 16px;
+}
+.small-header{
+    background-color: #aaa;
+    margin: auto 10px auto auto;
+    padding: 10px;
+}

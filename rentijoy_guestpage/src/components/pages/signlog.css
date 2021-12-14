@@ -1,0 +1,162 @@
+
+  .signup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .signup > div:nth-child(1) {
+    padding-bottom: 12px;
+    }
+  .main{
+    background-image:linear-gradient(#aff,#fdf);;
+    width: 22vw;
+    border-radius: 34px;
+    padding: 7px 0px;
+    padding-bottom: 20px;
+    line-height: 1.6;
+    font-size: 17px;
+    letter-spacing: 0.039em;
+    font-weight: 300;
+    
+  }
+  .formElements{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  span{
+    font-weight: normal;
+  font-size: smaller;
+  }
+  p{
+     letter-spacing: -0.27px;
+     font-weight: 400;
+  }
+  button{
+    background-color: #fef;
+    border-radius: 2px;
+    border: none;
+    padding: 3px 13px;
+    background-color: none;
+  }
+  /* button:hover{
+    background-color:;
+  } */
+  input{
+    border-radius: 5px;
+    border:none;
+    width: auto;
+   
+  }
+  
+  .Login {
+    background-image: linear-gradient(#adf,#fdf);
+      display: inline-table;
+      height: max-content;
+      width: 30vw;
+      margin-top: 131px;
+      padding-top: 3px;
+      padding-bottom: 7px;
+      border-radius: 40px;
+      text-align: center;
+      }
+
+      .Login > div:nth-child(3) {
+        padding-top: 12px;
+        }
+    
+      .Login > img:nth-child(1) {
+        border-top-width: 0px;
+        border-top-style: solid;
+        width: 165px;
+        height: 165px;
+        border-radius: 80px;
+        }
+    
+    .btn1 {
+    border-width: 1px 2px ;
+    border-style: solid;
+    padding: 4px 42px ;
+    margin: 0px 2px ;
+    border-radius: 15px;
+    }
+    .btn2 {
+      border-style: solid;
+      border-width: 4px 2px;
+      padding: 19px 13px;
+      margin: 0px 0px;
+      border-radius: 35px;
+      background-image: linear-gradient(rgb(191, 245, 245),rgb(228, 151, 205));
+      }
+      .btn1:hover {
+        background-image: linear-gradient(rgb(51, 57, 85),#fef);
+        color: white;
+      }
+      /* .btn2:hover {
+        background-image: linear-gradient(#333,#0ff);
+        color: white;
+      } */
+      #user_mail{
+        border-radius: 15px;
+      }
+      #password{
+        border-radius: 15px;
+      }
+      .Login#link{
+          margin-bottom: 15px;
+      }
+
+ .forgot{
+     background-image: linear-gradient(#adf,#fdf);
+     display: inline-table;
+     height: max-content;
+     line-height: 2;
+     border-radius: 34px;
+     padding:14px 12px 11px 12px;
+
+ }
+ .forgot > h2:nth-child(1) {
+  padding-left: 47px;
+  }
+
+ .forgot_password{
+  border-radius: 34px;
+ }
+ .userdetail > span:nth-child(3){
+   color:black;
+ }
+
+ .userinfo{
+   color:black;
+   background-color: bisque;
+   padding: 20px 30px;
+   border-radius: 12px;
+   display: flex;
+   flex-direction: row;
+   margin-top: 113px;
+ }
+ .image{
+  border-top-style: solid;
+  width: 165px;
+  height: 165px;
+  border-radius: 80px;
+ }
+ .userchild1{
+   color:rgb(25, 0, 255);
+   padding-left :20px;
+ }
+ .userchild2{
+  color:rgb(25, 0, 255)
+}
+.userchild3{
+  color:rgb(25, 0, 255)
+}
+.userchild4{
+  color:rgb(25, 0, 255)
+}
+
+ .userdetail{
+  color: #1e2122;
+  margin-left: 38px;
+  margin-top: 30px;
+ }
