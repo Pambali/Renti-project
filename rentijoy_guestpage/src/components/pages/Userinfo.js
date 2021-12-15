@@ -20,8 +20,12 @@ let userdetail = localStorage.getItem('user_mail')
            navigate("/")
     }
 
-
-
+    // function Remove(){
+    
+    //     localStorage.setItem('user_mail',true)
+    //     alert(" Succesfully remove your account");
+    //     navigate("/sign-up")
+    // }
     return(
         <><Navbar/>
         
@@ -41,9 +45,9 @@ let userdetail = localStorage.getItem('user_mail')
              <button className="btn1" onClick={onLogout}>LOGOUT</button>
             
              </div>
-
+               
          </div>
-       
+         {/* <p onClick={Remove}>Remove your account completely?</p> */}
          </>
     )
 }

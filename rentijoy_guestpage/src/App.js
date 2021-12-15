@@ -8,6 +8,7 @@ import MoviesByGenre,{SingleMovie} from './components/movieRender/MovieRender';
 import Forgotpassword from './components/pages/Forgot_password';
 import Userinfo from './components/pages/Userinfo';
 
+
 function App() {
   return (
     <div id="totalContainer" key="totalContainerKey">

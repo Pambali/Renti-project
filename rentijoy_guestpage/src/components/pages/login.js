@@ -5,10 +5,13 @@ import './signlog.css';
 import {Link} from 'react-router-dom'
 import {useNavigate} from "react-router-dom"
 import Navbar from '../Navbar';
+//require('dotenv').config()
+
 function Login(){
   let navigate=useNavigate();
   function handleSubmit(){   
-     
+    
+     //const BASE_URL = process.env.REACT_APP_URL;
     axios.post("http://localhost:4000/user/getUser",
     {
       userEmail:document.getElementById("user_mail").value,

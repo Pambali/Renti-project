@@ -10,21 +10,17 @@ import Navbar from '../Navbar';
       const username=document.getElementById("username");
       const user_mail=document.getElementById("user_mail");
       const password=document.getElementById("password");
-      const phone_no=document.getElementById("phone_no");
+      // const phone_no=document.getElementById("phone_no");
       const confirmpassword=document.getElementById("confirmpassword");
-      // const API_URl=process.env.REACT_APP_KEY;
-     // const BASE_URL = process.env.REACT_APP_URL;
-
-
-         Validation(user_mail);
-        onEmpty(username);
+         onEmpty(username);
          onEmpty(user_mail);
          onEmpty(password);
-         onEmpty(phone_no);
+         // onEmpty(phone_no);
          onEmpty(confirmpassword);
-       
-         if(username.value && user_mail.value && phone_no.value && password.value===confirmpassword.value){
-          console.log("function executed");
+         
+         if((user_mail.value.includes("@") && user_mail.value.includes(".com")) && password.value===confirmpassword.value){
+           
+            console.log("function executed");
            axios.post("http://localhost:4000/user/addUser",{
             userName:document.getElementById("username").value,
              userEmail:document.getElementById("user_mail").value,
@@ -45,10 +41,15 @@ import Navbar from '../Navbar';
             console.log("show error");
         })
       }
-        if(username.value && user_mail.value && phone_no.value && password.value!==confirmpassword.value){
+        if( password.value!==confirmpassword.value){
           confirmpassword.nextElementSibling.innerHTML="Password mismatch"
         }
+        if(!user_mail.value.includes("@") && !user_mail.value.includes(".com")){
+         user_mail.nextElementSibling.innerHTML="Invalid"
+        }
+        
       }
+      
 
    function onchange(p){
     document.getElementById(p.target.id).nextElementSibling.innerHTML=""
@@ -60,15 +61,19 @@ import Navbar from '../Navbar';
     }
    }
 
-   function Validation(p){
-      if( (p.value==="")||((!p.value.includes("@")) || (!p.value.includes(".com")))) {
-         p.nextElementSibling.innerHTML="Invalid mail";  
-      }
-   }
+   // function validation(p){
+   //    if( ((p.value.trim().length < 8) && (p.value.trim().length > 16)) && (!p.value.includes('@')) && (!p.value.includes('#')) )
+   //      {
+   //          p.nextElementSibling.innerHTML = "Invalid password"
+           
+   //      }
+   // }
+
 
     return(
        
    <div className="signup">
+      
       <Navbar/>
        <div>
           <h2>Sign up</h2>
@@ -77,17 +82,17 @@ import Navbar from '../Navbar';
        <div className="main">
        <div className="formElements">
           User Name 
-          <input type="text" name="username" id="username"  required pattern="[A-Z]{1}[a-z]{>5}" onChange={onchange}></input>
+          <input type="text" name="username" id="username"   onChange={onchange}></input>
           <span style={{color:"#f00"}} ></span>
        </div><br />
        <div className="formElements"> 
           User Email 
-          <input type="email" name="user_mail" id="user_mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" onChange={onchange}></input>
+          <input type="email" name="user_mail" id="user_mail"  onChange={onchange}></input>
           <span style={{color:"#f00"}} ></span>
        </div><br />
         <div className="formElements">  
           Password 
-          <input type="password" name="password" id="password" onChange={onchange}></input>
+          <input type="password" name="password" id="password"  onChange={onchange}></input>
           <span style={{color:"#f00"}} ></span>
        </div><br />
        <div className="formElements">
@@ -97,7 +102,7 @@ import Navbar from '../Navbar';
        </div><br />
        <div className="formElements">
           Phone No 
-          <input type="tel" name="phone_no" id="phone_no" required pattern="[6-9]{1}[0-9]{9}" onChange={onchange}></input>
+          <input type="number" id="phone_no" name= "phone_no"   />
           <span style={{color:"#f00"}} ></span>
        </div><br />
        <div className="formElements">
